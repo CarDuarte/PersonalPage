@@ -174,7 +174,7 @@ h6 {
 /* To do add foto, parte principal en content*/
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -187,11 +187,11 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #272626;
+  color: #dfdfdf;
 }
 
 #hero p {
-  color: #000000;
+  color: #9a9a9a;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -349,6 +349,7 @@ section {
   color: #ededed;
 }
 
+/* Circulito */
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
