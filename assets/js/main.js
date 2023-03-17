@@ -27,7 +27,7 @@
   /**
    * Easy on scroll event listener 
    */
-  const onscroll = (el, listener) => {
+   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
 
@@ -52,9 +52,9 @@
   onscroll(document, navbarlinksActive)
 
   /**
-   * Scrolls to an element with header offset
+   * Scrolls to an element
    */
-  const scrollto = (el) => {
+   const scrollto = (el) => {
     let elementPos = select(el).offsetTop
     window.scrollTo({
       top: elementPos,
@@ -78,9 +78,6 @@
     onscroll(document, toggleBacktotop)
   }
 
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
@@ -95,62 +92,40 @@
       scrollto(this.hash)
     }
   }, true)
-
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * Type effect
    */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
-
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
-
-  /**
-   * Hero type effect
-   */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
-
+   const typed = select('.typed')
+   if (typed) {
+     let typed_strings = typed.getAttribute('data-typed-items')
+     typed_strings = typed_strings.split(',')
+     new Typed('.typed', {
+       strings: typed_strings,
+       loop: true,
+       typeSpeed: 100,
+       backSpeed: 50,
+       backDelay: 2000
+     });
+   }
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
+   let skilsContent = select('.skills-content');
+   if (skilsContent) {
+     new Waypoint({
+       element: skilsContent,
+       offset: '80%',
+       handler: function(direction) {
+         let progress = select('.progress .progress-bar', true);
+         progress.forEach((el) => {
+           el.style.width = el.getAttribute('aria-valuenow') + '%'
+         });
+       }
+     })
+   }
 
-  window.addEventListener('load', () => {
+
+   window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
@@ -158,7 +133,6 @@
       mirror: false
     })
   });
-
 
   new PureCounter();
 
