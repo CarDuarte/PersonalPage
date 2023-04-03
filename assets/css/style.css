@@ -400,6 +400,20 @@ section {
   border: 2px solid #05bb5a;
 }
 
+
+.float-container {
+  padding: 20px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.float-child {
+  width: 45%;
+  float: left;
+  padding: 10px;
+  margin-right: 5px;
+}  
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
