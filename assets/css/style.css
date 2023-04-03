@@ -21,6 +21,8 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+
 /* Boton para arriba*/
 .back-to-top {
   position: fixed;
@@ -284,6 +286,7 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -315,6 +318,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
+  size: 50%;
   background-color: #05bb5a;
 }
 
