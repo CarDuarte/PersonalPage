@@ -240,15 +240,6 @@ section {
   left: calc(50% - 60px);
 }
 
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 3px;
-  background: #05bb5a;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
 
 .section-title p {
   margin-bottom: 0;
@@ -298,6 +289,7 @@ section {
   display: block;
   background: none;
   border-radius: 0;
+  padding-left: 50px;
 }
 
 .skills .progress .skill {
