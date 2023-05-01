@@ -51,6 +51,17 @@ h6 {
   visibility: visible;
   opacity: 0.5;
 }
+@media (min-width: 300px) and (max-width: 900px) {
+  .back-to-top {
+    position: fixed;
+    padding-right: 25px;
+    background: #6f78a3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+}
 
 /*Botones*/
 #header {
