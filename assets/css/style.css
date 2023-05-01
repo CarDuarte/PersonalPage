@@ -94,8 +94,10 @@ h6 {
 
 .nav-menu a,
 .nav-menu a:focus {
+  text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   color: #ffffff;
   margin-bottom: 8px;
   transition: 0.3s;
