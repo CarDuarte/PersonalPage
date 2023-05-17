@@ -166,6 +166,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
+
   background-size: cover;
 }
 
@@ -177,6 +178,11 @@ h6 {
 /* To do add foto, parte principal en content*/
 #hero:before {
   background: rgba(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #hero h1 {
@@ -391,7 +397,7 @@ section {
   border: 2px solid #05bb5a;
 }
 
-float-container {
+.float-container {
   padding: 20px;
   display: inline-block;
   justify-content: space-between;
