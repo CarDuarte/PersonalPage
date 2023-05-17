@@ -121,10 +121,6 @@ h6 {
   transition: 0.3s;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b4529e6 (modified icons and added background image, fixed an issue with the home page)
 @media (min-width: 992px) {
   .nav-menu a,
   .nav-menu a:focus {
@@ -170,11 +166,6 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-<<<<<<< HEAD
-
-=======
-  background: url("https://dgx9rrgrsfte9.cloudfront.net/wp-content/uploads/2020/10/30132001/Featured-Renters-Campfire-Tips-Blog-Hero-1920x1080-1.jpg") top right no-repeat ;
->>>>>>> b4529e6 (modified icons and added background image, fixed an issue with the home page)
   background-size: cover;
 }
 
@@ -186,7 +177,6 @@ h6 {
 /* To do add foto, parte principal en content*/
 #hero:before {
   background: rgba(0, 0, 0);
-
 }
 
 #hero h1 {
@@ -401,7 +391,7 @@ section {
   border: 2px solid #05bb5a;
 }
 
-<<<<<<< HEAD =======>>>>>>>7cfab43 (about section modified) .float-container {
+float-container {
   padding: 20px;
   display: inline-block;
   justify-content: space-between;
