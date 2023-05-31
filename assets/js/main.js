@@ -1,6 +1,24 @@
 (function () {
   "use strict";
 
+  const text = "Software Developer"; // The text to be typed
+  const typingTextElement = document.getElementById("typing-text");
+  const typingCursorElement = document.getElementById("typing-cursor");
+
+  let index = 0;
+
+  function typeText() {
+    if (index < text.length) {
+      typingTextElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeText, 150); // Adjust typing speed by changing the delay
+    } else {
+      typingCursorElement.style.display = "none";
+    }
+  }
+
+  typeText();
+
   const select = (el, all = false) => {
     el = el.trim();
     if (all) {
