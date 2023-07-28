@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Verdana", sans-serif;
   color: #e8e6e6;
   background-color: #101e34;
 }
@@ -15,8 +15,7 @@ body {
 #typing-cursor {
   display: inline-block;
   width: 8px;
-  height: 20px;
-  background-color: #000;
+  background-color: #e4e2e2;
   animation: blink-caret 0.8s infinite;
 }
 
@@ -44,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Verdana", sans-serif;
 }
 
 /* Boton para arriba*/
@@ -99,7 +98,7 @@ h6 {
   top: 0;
   right: 0;
   padding-top: 100px;
-  padding-right: 100px;
+  padding-right: 35px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -195,10 +194,12 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 100vh;
+  height: 70vh;
   padding-top: 200px;
   background-size: cover;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @media (min-width: 992px) {
@@ -222,8 +223,8 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #dfdfdf;
-  margin-top: 80px;
-  margin-left: 20px;
+  margin-top: 60px;
+  margin-left: 10px;
 }
 
 #hero p {
@@ -395,7 +396,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #84a7a1;
+  border-left: 2px solid #205295;
   position: relative;
   margin-left: 20px;
 }
@@ -406,13 +407,13 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #84a7a1;
+  color: #a5d7e8;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
+  background-color: #122944;
   font-size: 16px;
-  background: #2f3031;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -437,10 +438,10 @@ section {
   width: 16px;
   height: 16px;
   border-radius: 50px;
-  left: -9px;
+  left: -10px;
   top: 0;
   background: #fff;
-  border: 2px solid #84a7a1;
+  border: 2px solid #205295;
 }
 
 .float-container {
@@ -450,9 +451,9 @@ section {
 }
 
 .float-child {
-  width: 35%;
+  width: 40%;
   float: left;
-  padding-left: 100px;
+  padding-left: 80px;
 }
 
 .img-about {
@@ -466,9 +467,13 @@ section {
 @media (min-width: 300px) and (max-width: 900px) {
   .float-child {
     width: auto;
-    padding-left: 0;
-    max-width: 90%;
+    padding-left: 40px;
+    max-width: 100%;
     height: auto;
+  }
+  .img-about {
+    width: 100%;
+    margin: 0px;
   }
 }
 
@@ -476,7 +481,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #414141;
+  background: #0a1c31;
   color: #ffffff;
   font-size: 14px;
   text-align: center;
@@ -513,8 +518,8 @@ section {
   height: 100%;
   border-radius: 10px;
   display: flex;
-  padding: 10px;
-  color: #9f9d9d;
-  opacity: 0.5;
+  padding: 15px;
+  color: #a5d7e8;
+  opacity: 0.7;
   font-size: x-small;
 }
