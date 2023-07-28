@@ -4,6 +4,10 @@ body {
   background-color: #101e34;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #typing-container {
   font-family: Arial, sans-serif;
   font-size: 24px;
@@ -77,7 +81,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 996;
   background: #6f78a3;
@@ -105,8 +109,7 @@ h6 {
 @media (min-width: 300px) and (max-width: 900px) {
   .back-to-top {
     position: fixed;
-    padding-right: 25px;
-    background: #6f78a3;
+    background: #a5d7e8;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -273,6 +276,7 @@ h6 {
 @media (max-width: 992px) {
   #hero {
     text-align: center;
+    height: 80vh;
   }
 
   #hero h1 {
@@ -464,7 +468,7 @@ section {
   width: 16px;
   height: 16px;
   border-radius: 50px;
-  left: -10px;
+  left: -11px;
   top: 0;
   background: #fff;
   border: 2px solid #205295;
@@ -499,7 +503,8 @@ section {
   }
   .img-about {
     width: 100%;
-    margin: 0px;
+    margin: -23px;
+    margin-bottom: 10px;
   }
 }
 

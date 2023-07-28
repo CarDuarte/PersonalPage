@@ -123,7 +123,6 @@
     function (e) {
       if (select(this.hash)) {
         e.preventDefault();
-
         let body = select("body");
         if (body.classList.contains("mobile-nav-active")) {
           body.classList.remove("mobile-nav-active");
