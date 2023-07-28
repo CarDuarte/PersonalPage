@@ -91,14 +91,18 @@ h6 {
 
 /*Botones*/
 #header {
-  position: fixed;
-  top: 0;
-  left: 0;
   bottom: 0;
   z-index: 9997;
   transition: all 0.5s;
   padding: 15px;
-  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 @media (max-width: 991px) {
@@ -120,13 +124,14 @@ h6 {
 
 .nav-menu * {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   list-style: none;
 }
 /* Le da redondito a los botones*/
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
+  margin-left: 20px;
 }
 
 .nav-menu a,
@@ -192,13 +197,13 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-
+  padding-top: 200px;
   background-size: cover;
 }
 
 @media (min-width: 992px) {
   #hero {
-    padding-left: 160px;
+    padding-left: 218px;
   }
 }
 /* To do add foto, parte principal en content*/
@@ -226,12 +231,16 @@ h6 {
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 #hero p span {
   color: #2e8a99;
   letter-spacing: 1.2px;
+}
+
+#hero a {
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {
@@ -302,6 +311,10 @@ section {
   padding: 0;
 }
 
+.about {
+  background-color: #0a1c31;
+}
+
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
@@ -322,6 +335,10 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about a {
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -435,14 +452,15 @@ section {
 .float-child {
   width: 35%;
   float: left;
-  padding: 10px;
-  margin-right: 5px;
   padding-left: 100px;
 }
 
 .img-about {
-  width: 100%;
+  width: 80%;
   height: auto;
+  border-radius: 8px;
+  margin-left: 70px;
+  margin-top: 25px;
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
@@ -486,4 +504,17 @@ section {
   margin-top: 10px;
   font-weight: bold;
   /* Add any additional styles for the language names */
+}
+
+/* CLOCK */
+
+.clock {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  color: #9f9d9d;
+  opacity: 0.5;
+  font-size: x-small;
 }
