@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #e8e6e6;
-  background-color: #101010;
+  background-color: #101e34;
 }
 
 #typing-container {
@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  color: #ffffff;
+  color: #a5d7e8;
 }
 
 h1,
@@ -135,12 +135,12 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: #ffffff;
+  color: #0b2447;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #03490c;
+  background: #a5d7e8;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -165,7 +165,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
   color: #fff;
-  background: #11761f;
+  background: #205295;
 }
 
 .nav-menu a:hover span,
@@ -217,17 +217,20 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #dfdfdf;
+  margin-top: 80px;
+  margin-left: 20px;
 }
 
 #hero p {
-  color: #9a9a9a;
+  color: white;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
+  margin-left: 20px;
 }
 
 #hero p span {
-  color: #387b45;
+  color: #2e8a99;
   letter-spacing: 1.2px;
 }
 
@@ -313,7 +316,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #05bb5a;
+  color: #84a7a1;
   line-height: 0;
 }
 
@@ -357,7 +360,7 @@ section {
   height: 10px;
   transition: 0.9s;
   size: 50%;
-  background-color: #05bb5a;
+  background-color: #84a7a1;
 }
 
 /*--------------------------------------------------------------
@@ -375,7 +378,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #104d28;
+  border-left: 2px solid #84a7a1;
   position: relative;
   margin-left: 20px;
 }
@@ -386,7 +389,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #05bb5a;
+  color: #84a7a1;
   margin-bottom: 10px;
 }
 
@@ -420,7 +423,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #05bb5a;
+  border: 2px solid #84a7a1;
 }
 
 .float-container {
@@ -460,4 +463,27 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-icon {
+  text-align: center;
+  margin: 20px;
+}
+
+.skill-icon img {
+  width: 100px; /* Adjust the icon size as needed */
+  height: 100px;
+  /* Add any additional styles for the icons */
+}
+
+.skill-icon p {
+  margin-top: 10px;
+  font-weight: bold;
+  /* Add any additional styles for the language names */
 }
